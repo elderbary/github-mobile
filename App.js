@@ -1,14 +1,14 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View, SafeAreaView } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
 
 import Home from "./src/screens/Home";
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <NavigationContainer>
       <Home />
-      <StatusBar style="auto" />
-    </View>
+    </NavigationContainer>
   );
 }
 

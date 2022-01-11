@@ -1,12 +1,22 @@
-import React, { Component } from "react";
-import { Text } from "react-native";
+import React from "react";
+import { View, StyleSheet } from "react-native";
+import FlatListIssues from "../components/FlatListIssues";
 
-class TextInANest extends Component {
-  state = {};
+const Home = () => {
+  return (
+    <View style={styles.container}>
+      <FlatListIssues />
+    </View>
+  );
+};
 
-  render() {
-    return <Text>Home</Text>;
-  }
-}
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
 
-export default TextInANest;
+export default Home;
